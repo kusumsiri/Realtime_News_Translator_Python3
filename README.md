@@ -1,1 +1,1 @@
-# Realtime_News_Translator_Python3
+# Realtime News Translator Application - Python3
