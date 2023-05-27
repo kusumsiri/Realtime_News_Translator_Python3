@@ -1,7 +1,7 @@
 variable "runtime" {
     description = "lambda function runtime env"
     type = string
-    default = "Python 3.10"
+    default = "python3.10"
 }
 
 variable "function_name" {
