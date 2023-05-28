@@ -24,9 +24,12 @@ async def translate():
     translate = boto3.client(service_name='translate', region_name='eu-west-1', use_ssl=True)
     result = translate.translate_text(Text=title, SourceLanguageCode="de", TargetLanguageCode="en")
     
-    return (result.get('TranslatedText'))    
+    return (
+        {"DE" : title },
+        {"EN" : result.get('TranslatedText')}
+    )   
 
-def lambda_handler(event, context):
+def handler(event, context):
     return {
         'statusCode': 200,
         'body': json.dumps(asyncio.run(translate()))
