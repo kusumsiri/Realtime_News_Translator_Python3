@@ -12,3 +12,7 @@ The newsapi.org API-KEY is considered a secret value. So it must be set in a .tf
 ---
 Deutsch
 > Note: Eine ähnliche Node.js-Anwendung finden Sie [hier](https://github.com/kusumsiri/Realtime_News_Translator_Nodejs)
+
+Eine Echtzeit-Nachrichtenübersetzeranwendung mit serverloser Amazon-Technologie unter Verwendung von Terraform und Python3. Diese App übersetzt deutsche Nachrichten in Echtzeit ins Englische. Diese Konvertierung erfolgt automatisch, wenn auf die Lambda-Funktions-URL zugegriffen wird.
+
+Es verwendet zwei APIs. Die [newsapi.org](https://newsapi.org/) API wird zum Abrufen von Nachrichten verwendet und verwendet dann [Amazon Translate](https://docs.aws.amazon.com/translate/latest/dg/what-is.html), unterstützt durch fortschrittliches maschinelles Lernen, um es zu übersetzen.
