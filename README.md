@@ -9,5 +9,6 @@ It uses two APIs. The [newsapi.org](https://newsapi.org/) API is used to pull ne
 
 The newsapi.org API-KEY is considered a secret value. So it must be set in a .tfvars file that is not in this repository. The key will then be set as an environment variable for the lambda function.
 
+---
 Deutsch
 > Note: Eine ähnliche Node.js-Anwendung finden Sie [hier](https://github.com/kusumsiri/Realtime_News_Translator_Nodejs)
